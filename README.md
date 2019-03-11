@@ -10,7 +10,7 @@ mnist压缩包中包含了images，里面存放的是用于测试的手写数字
 
 连接cassandra数据库：
 为了使得所创建的mnist容器和cassandra数据库互相连接，以实现将识别结果等数据存放其中的目的，我用了以下的两个命令：   
-docker run -d --name mnist -p 4000:8080 mnistapp；   
+docker run -d --name mnist -p 4000:8080 mnist；   
 docker run -d --name sxy-cassandra --network container:mnist Cassandra
 
 总结报告：   
